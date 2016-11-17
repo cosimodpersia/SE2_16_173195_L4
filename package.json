@@ -1,0 +1,24 @@
+{
+  "name": "cosimo",
+  "version": "1.0.0",
+  "description": "esercitazione lab 4",
+  "main": "index.js",
+  "dependencies": {
+    "bind": "^0.1.7",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosimodpersia/SE2_16_173195_L4.git"
+  },
+  "author": "cosimo damiano persia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cosimodpersia/SE2_16_173195_L4/issues"
+  },
+  "homepage": "https://github.com/cosimodpersia/SE2_16_173195_L4#readme"
+}
