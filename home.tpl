@@ -8,7 +8,7 @@
     <label for="id">Insert ID Employee</label>
     <input id="id" name="id" class="inputPanel" type="text" size="20" maxlength="50" value="">
     <button id="search">search Employee</button>
-    <button id="delete employee">delete employee</button>
+    <button id="delete">delete employee</button>
     <br>
     <br>
     <br>
@@ -16,7 +16,7 @@
     <br>
     <br>
     <br>
-    <div id="form">
+    <div id="form" style="visibility: hidden;">
         <label for="idf">ID</label>
         <input id="idf" name="idf" class="inputPanel" type="text" size="20" maxlength="50" value="(:id:)">
         <br>
