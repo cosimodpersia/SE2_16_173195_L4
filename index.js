@@ -4,7 +4,7 @@ var express = require('express');
 var bind = require('bind');
 var url = require('url');
 var employee = require('./employee.js');
-//POST
+//POST reader
 var bodyParser = require('body-parser');
 //util
 var util = require('util');
@@ -86,9 +86,9 @@ app.use('/', function (request, response) {
     //bind to template
     bind.toFile('./home.tpl', {
             //set up parameters
-            name: 'via Roma',
-            id: 'Milano',
-            surname: 'madonna',
+            name: '',
+            id: '',
+            surname: '',
             salary: '0',
             level: '0'
         },

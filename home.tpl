@@ -18,27 +18,27 @@
     <br>
     <div id="form" style="visibility: hidden;">
         <label for="idf">ID</label>
-        <input id="idf" name="idf" class="inputPanel" type="text" size="20" maxlength="50" value="(:id:)">
+        <input id="idf" name="idf" class="inputPanel" type="number" size="20" maxlength="50" value="(:id:)">
         <br>
         <br>
         <br>
         <label for="namef">NAME</label>
-        <input id="namef" name="namef" class="inputPanel" type="text" size="20" maxlength="50" value="(:name:)">
+        <input id="namef" name="namef" class="inputPanel" type="text" size="20" maxlength="50" value="(:name:)" required>
         <br>
         <br>
         <br>
         <label for="surnamef">SURNAME</label>
-        <input id="surnamef" name="surnamef" class="inputPanel" type="text" size="20" maxlength="50" value="(:surname:)">
+        <input id="surnamef" name="surnamef" class="inputPanel" type="text" size="20" maxlength="50" value="(:surname:)" required>
         <br>
         <br>
         <br>
         <label for="levelf">LEVEL</label>
-        <input id="levelf" name="levelf" class="inputPanel" type="text" size="20" maxlength="50" value="(:level:)">
+        <input id="levelf" name="levelf" class="inputPanel" type="number" size="20" maxlength="50" value="(:level:)" required>
         <br>
         <br>
         <br>
         <label for="salaryf">SALARY</label>
-        <input id="salaryf" name="salaryf" class="inputPanel" type="text" size="20" maxlength="50" value="(:salary:)">
+        <input id="salaryf" name="salaryf" class="inputPanel" type="number" size="20" maxlength="50" value="(:salary:)" required>
         <br>
         <br>
         <button id="insert">insert employee</button>

@@ -6,10 +6,19 @@ var methodDelete = 'POST';
 var actionDelete = '/delete';
 var showhide = document.getElementById('showhide');
 var form = document.getElementById('form');
+
+/**
+ * @brief behaviour of the form. when shown it remove all the content
+ */
 showhide.onclick = function () {
     if (form.style.visibility === 'visible') {
         hideform();
     } else {
+        document.getElementById("idf").value = '';
+        document.getElementById("namef").value = '';
+        document.getElementById("surnamef").value = '';
+        document.getElementById("levelf").value = '';
+        document.getElementById("salaryf").value = '';
         showForm();
     }
 };
@@ -22,7 +31,7 @@ function hideform() {
     form.style.visibility = 'hidden';
 }
 
-//se id e vuoto?
+
 var search = document.getElementById('search');
 search.onclick = function () {
     var id = document.getElementById("id").value;
@@ -48,7 +57,10 @@ search.onclick = function () {
     }
 };
 
-//se i campi sono vuoti inserire valori di base
+/**
+ * @brief method that sends the data which has to be saved on the server
+ * @return nothing.
+ */
 var insert = document.getElementById('insert');
 insert.onclick = function () {
     var id = document.getElementById("idf").value;
@@ -64,13 +76,8 @@ insert.onclick = function () {
         surname = "none";
     }
     var level = document.getElementById("levelf").value;
-    if (level == "") {
-        level = 0;
-    }
     var salary = document.getElementById("salaryf").value;
-    if (salary == "") {
-        salary = 0;
-    }
+    console.log(message);
     var message = "id=" + id + "&name=" + name + "&surname=" + surname + "&level=" + level + "&salary=" + salary;
     console.log(message);
 
@@ -81,8 +88,13 @@ insert.onclick = function () {
         console.log("inserted");
     }
     xhr.send(message);
-};
+}
 
+
+/**
+ * @brief delete the employee who has the id 
+ * @return nothing
+ */
 document.getElementById('delete').onclick = function () {
     var id = document.getElementById("id").value;
     var xhr = new XMLHttpRequest();
